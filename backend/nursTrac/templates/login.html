@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NursTrac Login</title>
+  <style>
+    /* Reset default margins/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full-page black background, center content vertically/horizontally */
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      height: 100vh;          /* makes body full viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Container for the login form */
+    .login-container {
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Purple heading for "Login" */
+    .login-container h1 {
+      font-size: 2rem;
+      color: #800080;
+      margin-bottom: 30px;
+    }
+
+    /* White input fields with black text */
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Purple login button with white text */
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #800080;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Hover effect for button */
+    .login-container button:hover {
+      background-color: #9b4ba8; /* slightly lighter purple on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <input type="text" name="username" placeholder="Username" />
+      <input type="password" name="password" placeholder="Password" />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

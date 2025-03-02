@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
+from apps.pages.views import login_view  # Make sure this path is correct
 
 def home(request):
     return HttpResponse("Welcome to NursTrac!")
@@ -24,8 +25,7 @@ def home(request):
 urlpatterns = [
     path('', home, name='home'),  # This pattern handles the root URL.
     path('admin/', admin.site.urls),
+    path('login/', login_view, name='login'),
     path('accounts/', include('apps.accounts.urls')),
     path('hours/', include('apps.hours.urls')),
 ]
-
-

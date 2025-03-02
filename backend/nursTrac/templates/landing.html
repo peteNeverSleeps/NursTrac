@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NursTrac Landing Page</title>
+  <style>
+    /* Reset default margins/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000; /* Main background color (black) */
+      font-family: Arial, sans-serif;
+      color: #fff; /* Default text color: white */
+    }
+
+    /* HEADER / NAVBAR */
+    .navbar {
+      background-color: #800080; /* Bold purple */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      height: 60px;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .navbar .links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    /* MAIN CONTAINER */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
+      min-height: calc(100vh - 60px - 60px); /* 60px for navbar + ~60px for footer */
+    }
+
+    /* BUTTON STYLES */
+    .button {
+      background-color: #000; /* Matches main background */
+      border: 1px solid #800080; /* Thin purple border */
+      color: #fff;
+      padding: 12px 24px;
+      margin: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      width: 260px; /* Consistent width for all buttons */
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #800080;
+      color: #fff; /* Keep text white on hover */
+    }
+
+    /* FOOTER / BOTTOM INFO */
+    .footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logged-in {
+      margin-bottom: 5px;
+    }
+
+    .footer a {
+      color: #00f; /* Blue link color */
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <div class="navbar">
+    <div class="logo">NursTrac</div>
+    <div class="links">
+      <a href="#">Help</a>
+      <a href="#">My Account</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-container">
+    <button class="button">Log Hours</button>
+    <button class="button">Charts</button>
+    <button class="button">Edit Profile</button>
+    <button class="button">Change Password & Email</button>
+  </div>
+
+  <!-- FOOTER / BOTTOM INFO -->
+  <div class="footer">
+    <div class="logged-in">Logged in as your.email@example.com</div>
+    <a href="#">Logout</a>
+  </div>
+
+</body>
+</html>

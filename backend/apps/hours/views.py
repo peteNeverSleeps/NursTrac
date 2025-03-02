@@ -3,6 +3,9 @@ from .models import HourLog, Activity
 from .forms import HourLogForm
 from django.http import HttpResponse
 
+def index(request):
+    return HttpResponse("Welcome to the Hours Index Page")
+
 def log_hours(request):
     if request.method == 'POST':
         form = HourLogForm(request.POST)
